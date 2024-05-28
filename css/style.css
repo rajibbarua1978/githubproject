@@ -1,0 +1,185 @@
+/* common css starts here */
+:root {
+    --font-family: "Josefin Sans", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --text-color: #11161e;
+	--3d-primary-color: #151a32;
+	--comon-colot: #fff;
+	--1st-primary-color: #ff6f61;
+	--paragraph-color: #444;
+	--2nd-primary-color: #ff5645;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+	--a6aab7: #a6aab7;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,p,span{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--font-family);
+}
+/* common css ends here */
+/* Navbar Starts */
+#navLg ul li a{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: var(--text-color);
+padding: 37px 22.5px;
+}
+#navLg ul li a.active-link,
+#navLg ul li a:hover{
+    color: var(--1st-primary-color);
+}
+nav .socialIcon ul li {
+    display: inline-block;
+}
+nav .socialIcon ul li a{
+    color: var(--3d-primary-color) ;
+    padding: 0 10px;
+    font-size: 17px;
+    position: relative;
+}
+nav .socialIcon ul li a span.cartCount{
+    position: absolute;
+    top: -5px;
+    right:2px;
+     background-color: var(--1st-primary-color);
+     border-radius: 50%;
+     width: 15px;
+     height: 15px;
+     text-align: center;
+     line-height: 18px;
+     font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--comon-colot);
+     
+}
+.navbarSm {
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+}
+.navbarSm .menu a {
+    color: var(--3d-primary-color);
+}
+.navbarSm .logo {
+    padding: 15px 0;
+    text-align: center;
+}
+.navbarSm .logo img {
+    height: 50px;
+}
+.navbarSm .socialIcon ul{
+    text-align: center;
+}
+.navbarSm .socialIcon ul li a{
+    padding: 0 5px;
+}
+navbarSm .socialIcon ul li a span.cartCount {
+    right: -4px
+}
+#offcanvasSmall ul {
+    text-align: left;
+}
+#offcanvasSmall ul li a {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: var(--1st-primary-color);
+padding: 10px 0;
+display: block;
+border-bottom:1px solid #ccc ;
+}
+#offcanvasSmall ul li:last-child a {
+    border: none;
+}
+.dropdown-menu {
+    position: static;
+}
+/* Navbar ends */
+/* Banner starts here */
+#banner {
+    position: relative;
+}
+#banner .bannerSlide {
+    height:800px;
+    background-size: cover;
+    background-position: center;
+   
+}
+#banner .bannerSlide h6 {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: #1d1d1d;
+}
+#banner .bannerSlide h2 {
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 64px;
+line-height: 116%;
+color: #1d1d1d;
+margin: 14px 0 16px 0;
+}
+#banner .bannerSlide p {
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: #1d1d1d;
+padding-bottom: 29px;
+}
+#banner .bannerSlide a {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 167%;
+text-align: center;
+color: var(--comon-colot);
+background: var(--1st-primary-color);
+padding: 13px 37px;
+display: inline-block;
+}
+.bannerDots {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    /* background-color: red; */
+    transform : translateX(-50%)
+}
+.bannerDots li {
+    display: inline-block;
+}
+.bannerDots li button {
+    width: 10.91px;
+    height: 6px;
+    border-radius: 5px;
+    background: var(--comon-colot);
+    border: none;
+    color: transparent;
+    margin-right: 5.46px;
+    transition: 0.33 ease;
+}
+.bannerDots li.slick-active button {
+    width: 28.36px;
+    background-color: var(--1st-primary-color);
+}
+
+
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor</title>
+    <!-- css Link -->
+    <!-- fontawesome Icons -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&
+family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap css Link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- css Link ends -->
+</head>
+<body>
+    <!--Large navbar starts -->
+    <nav class="navbar navbar-expand-lg d-none d-lg-block ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./css/images/Logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navLg">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Shop <span><i class="fa-solid fa-angle-down"></i></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Pages <span><i class="fa-solid fa-angle-down"></i></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Features <span><i class="fa-solid fa-angle-down"></i></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Blogs <span><i class="fa-solid fa-angle-down"></i></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Contact</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+          <div class="socialIcon">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bag-shopping"></i> 
+                <span class="cartCount">0</span></a></li>
+            </ul>
+        </div>
+        </div>
+        
+      </nav>
+    <!--Large navbar ends -->
+    <!-- Small Navbar Starts -->
+    <nav class="d-lg-none navbarSm">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-3 menu text-center">
+           
+            <!-- off canvas menu starts -->
+            <a  data-bs-toggle="offcanvas" href="#offcanvasSmall" role="button" aria-controls="offcanvasExample">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSmall" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 <a href="#"><img src="./css/images/Logo.png" alt="" height="50px"></a></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Shop</a></li>
+                  <li><a href="">Pages</a></li>
+                    <div class="dropdown">
+                      <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Feature
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- off canvas menu ends -->
+          </div>
+          <div class="col-5 logo">
+            <a href="#"><img src="./css/images/Logo.png" alt=""></a>
+          </div>
+      
+          <div class="col-4 ">
+            <div class="socialIcon">
+              <ul>
+                  <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-bag-shopping"></i> 
+                  <span class="cartCount">0</span></a></li>
+              </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Small Navbar ends -->
+    <!-- Banner Slider Section starts-->
+    <section id="banner">
+      <!-- Desktop Slider starts -->
+      <div class="bannerSlider d-md-block d-none">
+
+        <div class="bannerSlide" style="background-image: url(./css/images/Banner.png);">
+       <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="bannerContent col-lg-5">
+            <h6>Mega Sale</h6>
+            <h2>Up To 35% Off</h2>
+            <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+            <a href="">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+        </div>
+       </div>
+        </div>
+        <div class="bannerSlide" style="background-image: url(./css/images/Banner.png);">
+          <div class="container h-100">
+           <div class="row align-items-center h-100">
+             <div class="bannerContent col-lg-5">
+               <h6>Mega Sale</h6>
+               <h2>Up To 35% Off</h2>
+               <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+               <a href="">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+             </div>
+           </div>
+          </div>
+           </div>
+           <div class="bannerSlide" style="background-image: url(./css/images/Banner.png);">
+            <div class="container h-100">
+             <div class="row align-items-center h-100">
+               <div class="bannerContent col-lg-5">
+                 <h6>Mega Sale</h6>
+                 <h2>Up To 35% Off</h2>
+                 <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                 <a href="">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+               </div>
+             </div>
+            </div>
+             </div>
+        
+      </div>
+      <!-- Desktop Slider Ends -->
+      <!-- Mobile Slider Starts -->
+      <div class="bannerSliderSm d-md-none d-block">
+       <div class="bannerSlide">
+        <a href="#"><img class="d-block w-100" src="./css/images/Group 39(1).png" alt=""></a>
+       </div>
+       <div class="bannerSlide">
+        <a href="#"><img class="d-block w-100" src="./css/images/Group 39(1).png" alt=""></a>
+       </div>
+       <div class="bannerSlide">
+        <a href="#"><img class="d-block w-100" src="./css/images/Group 39(1).png" alt=""></a>
+       </div>
+       <div class="bannerSlide">
+        <a href="#"><img class="d-block w-100" src="./css/images/Group 39(1).png" alt=""></a>
+       </div>
+      </div>
+      <!-- Mobile Slider Ends -->
+    </section>
+    <!-- Banner Slider Section ends-->
+    
+
+
+
+
+    <!-- js start -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- js ends -->
+</body>
+</html>
